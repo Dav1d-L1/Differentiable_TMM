@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "differentiable_tmm"
+version = "1.0.0"
+description = "Differentiable transfer-matrix method tools for multilayer thin-film optics and color simulation."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Peiqin" }
+]
+keywords = [
+    "thin-film",
+    "transfer-matrix-method",
+    "TMM",
+    "optics",
+    "differentiable",
+    "pytorch",
+    "color-science"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "scipy",
+    "torch",
+    "tqdm",
+]
+
+[project.urls]
+Homepage = "https://github.com/Dav1d-L1/differentiable_tmm"
+Repository = "https://github.com/Dav1d-L1/differentiable_tmm"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["differentiable_tmm*"]

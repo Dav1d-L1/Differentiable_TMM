@@ -1,0 +1,6 @@
+include README.md
+include pyproject.toml
+include LICENSE
+recursive-include differentiable_tmm *.py
+recursive-include example *.py
+recursive-include example/assets *.txt
